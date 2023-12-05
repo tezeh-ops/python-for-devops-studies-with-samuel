@@ -1,3 +1,13 @@
+
+#here we are seeing how we can use <Float> variable to do:
+# Addition
+#Subtraction
+# Devision
+#And how to run up a decimal number
+
+
+
+
 # Float variables
 num1 = 5.0
 num2 = 2.5
