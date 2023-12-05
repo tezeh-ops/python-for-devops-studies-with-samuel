@@ -3,7 +3,7 @@
 str1 = "Hello"
 str2 = "World"
 str3 = "welcome to samuelTech"
-result = str1 + " " + str2 + " " + str3   # this call String cancatination
+result = str1 + " " + str2 + " " + str3   # this call String concatination
 print(result)
 
 # when ran the out will be < Hello  World >
