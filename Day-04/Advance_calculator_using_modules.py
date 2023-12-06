@@ -11,7 +11,7 @@
 
 import caculator_code_with_Function_use
 
-caculator_code_with_Function_use        # calling the file to run it
+caculator_code_with_Function_use        # calling the file to run it.
 
 
 
