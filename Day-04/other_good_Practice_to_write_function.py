@@ -1,10 +1,9 @@
 
 # here we are trying to make our Function more flexiable  and this will increase the Modularity of our Functions 
 
-# here we taking out the hard-coding of the function by not defining any Var  e.g  ( sum1 = 10 )> . And this will help any one to reuse ourcode
+# We will be defining the input not as var but in the Function itself when calling it.
 
 
-#NB  Here is the best way ro write our functions
 
 
 def addition(num1,  num2):
