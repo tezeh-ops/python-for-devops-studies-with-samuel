@@ -1,6 +1,6 @@
 import os
 
-def list_files_in_folder(folder_path):
+def list_files_in_folder(folder_path):       # here our ERROR hanadeling Function
     try:
         files = os.listdir(folder_path)
         return files, None
@@ -9,6 +9,7 @@ def list_files_in_folder(folder_path):
     except PermissionError:
         return None, "Permission denied"
 
+# Below is the Function for our Folder input and file listing
 def main():
     folder_paths = input("Enter a list of folder paths separated by spaces: ").split()
     
@@ -21,5 +22,5 @@ def main():
         else:
             print(f"Error in {folder_path}: {error_message}")
 
-if __name__ == "__main__":
+if __name__ == "__main__":           # calling the both function above
     main()
