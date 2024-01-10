@@ -1,21 +1,22 @@
-# This code sample uses the 'requests' library:
-# http://docs.python-requests.org
+
+
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+
 from flask import Flask
 
 app = Flask(__name__)
 
 # Define a route that handles GET requests
-@app.route('/createJira', methods=['POST'])
+@app.route('/createjira', methods=['POST'])
 def createJira():
 
     url = "https://samuel-munoh.atlassian.net/rest/api/3/issue"
 
-    API_TOKEN=""
+    API_TOKEN=" "  # paste your TOKEN here
 
-    auth = HTTPBasicAuth("", API_TOKEN)
+    auth = HTTPBasicAuth("samuelmunoh@gmail.com", API_TOKEN)
 
     headers = {
         "Accept": "application/json",
@@ -40,10 +41,10 @@ def createJira():
              "version": 1
         },
         "project": {
-           "key": "AB"
+           "key": "TRAC"
         },
         "issuetype": {
-            "id": "10006"
+            "id": "10011"
         },
         "summary": "Main order flow broken",
     },
